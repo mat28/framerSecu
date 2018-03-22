@@ -116,7 +116,7 @@ Appel_Valnetin.onTap ->
 	flow.showNext(Live_Attente_valentin)
 Visio_Valentin.onTap ->
 	flow.showNext(Live_Attente_valentin)
-	Utils.delay 10, ->
+	Utils.delay 5, ->
 		flow.showNext(Live)
 raccrocher_valentin.onTap ->
 	flow.showPrevious()
@@ -166,7 +166,7 @@ Violet12.onTap ->
 	flow.showNext(Live_Contacts)
 contact_live_bruno.onTap ->
 	flow.showNext(Live_Attente_bruno)
-	Utils.delay 10, ->
+	Utils.delay 5, ->
 		flow.showNext(Live)
 Raccrocher_bruno_live.onTap ->
 	flow.showPrevious()
@@ -188,7 +188,7 @@ aujourdhui3.onTap ->
 	flow.showNext(Home_Tel)
 contact_live_bruno.onTap ->
 	flow.showNext(Live_Attente_bruno)
-	Utils.delay 10, ->
+	Utils.delay 5, ->
 		flow.showNext(Live)
 appel_bruno1.onTap ->
 	flow.showNext(Live_Attente_bruno)
@@ -196,22 +196,26 @@ apple_bruno1.onTap ->
 	flow.showNext(Live_Attente_bruno)
 visio_bruno1.onTap ->
 	flow.showNext(Live_Attente_bruno)
-	Utils.delay 10, ->
+	Utils.delay 5, ->
 		flow.showNext(Live)
 visio_bruno1_1.onTap ->
 	show.showNext(Live_Attente_bruno)
-	Utils.delay 10, ->
+	Utils.delay 5, ->
 		flow.showNext(Live)
 back_live.onTap ->
 	flow.showPrevious()	
 contact_live_valentin.onTap ->
 	flow.showNext(Live_Attente_valentin)
-	Utils.delay 10, ->
+	Utils.delay 5, ->
 		flow.showNext(Live) 
 startLidl.onTap ->
 	flow.showNext(Intervention_demarrer_message)
 startLidl_1.onTap ->
-	flow.showNext(Intervention_demarrer_message)	
+	flow.showNext(Intervention_demarrer_message)
+callStart.onTap ->
+	flow.showNext(Live_Attente_bruno)
+	Utils.delay 5, ->
+		flow.showNext(Live) 		
 
  
 layersos1 = sos1
@@ -299,37 +303,59 @@ sos11.onTap ->
 
 animationsos1.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos1.reset()
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos1.reset()
 animationsos2.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos2.reset()
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos2.reset()
 animationsos3.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos3.reset()	
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos3.reset()	
 animationsos4.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos4.reset()
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos4.reset()
 animationsos5.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos5.reset()
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos5.reset()
 animationsos6.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos6.reset()
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos6.reset()
 animationsos7.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos7.reset()
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos7.reset()
 animationsos8.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos8.reset()	
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos8.reset()	
 animationsos9.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos9.reset()
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos9.reset()
 animationsos10.onAnimationEnd ->
 	flow.showNext(Live_Attente_bruno)
-	animationsos10.reset()
+	Utils.delay 5, ->
+		flow.showNext(Live)
+		animationsos10.reset()
 animationsos11.onAnimationEnd ->
-	flow.showNext(Live_Attente_bruno)	
-	animationsos11.reset()				
+	flow.showNext(Live_Attente_bruno)
+	Utils.delay 5, ->
+		flow.showNext(Live)	
+		animationsos11.reset()				
 
 #animation sos liste intervention 	
 #layerSOS_Home =  SOS_Home
